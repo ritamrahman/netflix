@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=MuseoModerno&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+*{margin: 0; padding: 0; box-sizing: border-box; background-color: rgb(235, 230, 227);}
+
+.heading{
+    width: 100%;
+    height: 70px;
+    background-color: #fff;
+    text-align: center;
+    padding-top: 15px;
+    color: rgb(179, 178, 178);
+    font-family: 'MuseoModerno', cursive;
+}
+
+.cards{
+    width: 500px;
+    height: 400px;
+    /* border: 1px solid red; */
+    position: relative;
+    margin: 50px;
+    float: left;
+    margin-left: 100px;
+    transition: transform .2s;
+    border-radius: 20px 20px ;
+}
+.card{
+    position: absolute;
+    width: 100%;
+    height: 70%;
+    border-radius: 20px 20px ;
+}
+.card__img{
+    width: 100%;
+    height: 100%;
+    border-radius: 20px 20px 0 0;
+    background-position: 100% 100%;
+}
+.details{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: auto;
+    background-color: #fff;
+    border-radius: 20px;
+    padding: 10px 0 0 15px;
+    border-radius: 0 0 20px 20px;
+
+}
+.catagry{
+    width: 100%;
+    height: auto;
+    background-color: #fff;
+    color: rgb(163, 158, 153);
+    font-size: 20px;
+    letter-spacing: 5px;
+    font-family: 'MuseoModerno', cursive;
+    margin-bottom: 5px;
+}
+.title{
+    width: 100%;
+    height: auto;
+    background-color: #fff;
+    font-family: 'Roboto', sans-serif;
+    color: rgb(66, 64, 63);
+    margin-bottom: 5px;
+}
+button{
+    outline: none;
+    border: none;
+    width: 120px;
+    height: 40px;
+    background-color: rgb(236, 37, 37);
+    border-radius: 10px;
+    margin-bottom: 5px;
+    cursor: pointer;
+    color: seashell;
+    font-family: 'Roboto', sans-serif;
+    font-size: 17px;
+}
+.cards:hover{
+    transform: scale(1.05);
+    box-shadow: 0 0 20px gray;
+}
